@@ -79,7 +79,7 @@ const Collection = () => {
     useEffect(()=>{
         sortProduct();
         // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, sortType)
+    }, [sortType])
 
     return (
         <div className='flex flex-col sm:flex-row gap-1 sm:gap-10 pt-10 border-t'>
